@@ -1,7 +1,7 @@
 # CoderVick
 # Hi there, I'm Souvick Kumar Halder 👋
 
-![Profile Banner](https://via.placeholder.com/1200x300.png?text=Welcome+to+My+GitHub+Profile!)
+![Profile Banner](https://www.canva.com/design/DAGHQR3ySG0/1vn_ve_nYydgPUvJR812wg/edit?utm_content=DAGHQR3ySG0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 I am a B.Tech student with a passion for technology, coding, and continuous learning. I enjoy solving complex problems and working on innovative projects. Here you'll find a collection of my work, including projects, contributions, and anything else I find interesting.
 
