@@ -22,7 +22,7 @@ I am a B.Tech student with a passion for technology, coding, and continuous lear
 
 ## 📫 How to reach me
 - **Email:** [souvickh1234@gmail.com](mailto:souvickh1234@gmail.com)
-- **LinkedIn:** [linkedin.com/in/souvickhalder](https://linkedin.com/in/souvickhalder)
+- **LinkedIn:** [linkedin.com/in/souvick-kumar-halder-752508292/](https://www.linkedin.com/in/souvick-kumar-halder-752508292/)
 - **Twitter:** [@souvickh](https://twitter.com/souvickh)
 
 ## 💬 Let's Connect
@@ -32,7 +32,6 @@ I'm always open to discussing new projects, creative ideas, or opportunities to 
 ![Souvick's GitHub stats](https://github-readme-stats.vercel.app/api?username=souvickhalder&show_icons=true&theme=radical)
 
 ## 🌟 Top Languages
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=souvickhalder&layout=compact&theme=radical)
 
 ## 🤝 Contributing
 If you have any suggestions or ideas to improve any of my projects, feel free to fork the repo and open a pull request. I'm always excited to collaborate with others!
@@ -41,4 +40,3 @@ If you have any suggestions or ideas to improve any of my projects, feel free to
 
 *Thank you for visiting my GitHub profile!*
 
-![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=souvickhalder)
