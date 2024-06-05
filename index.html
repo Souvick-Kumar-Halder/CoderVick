@@ -175,58 +175,23 @@
             cursor: pointer;
         }
 
-        /* Responsive styles */
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            header #branding {
-                margin-bottom: 10px;
-            }
-
-            header ul {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            header li {
-                margin-left: 0;
-                margin-bottom: 10px;
-            }
-
-            #showcase h1 {
-                font-size: 40px;
-                margin-top: 60px;
-            }
-
-            #showcase p {
-                font-size: 18px;
-            }
-
-            .container {
-                width: 90%;
-            }
-
-            .content div {
-                flex: 1 0 100%;
-                margin: 10px 0;
-            }
+        .info-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            margin: 20px 0;
         }
 
-        @media (max-width: 480px) {
-            header ul {
-                align-items: center;
-            }
-
-            .cta h2 {
-                font-size: 20px;
-            }
-
-            .cta button {
-                font-size: 16px;
-            }
+        .info-section div {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            margin: 0 10px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            border: #ddd 1px solid;
         }
     </style>
 </head>
@@ -243,7 +208,7 @@
                     <li><a href="#" onclick="openModal('servicesModal')">Services</a></li>
                     <li><a href="#" onclick="openModal('usefulLinksModal')">Useful Links</a></li>
                     <li><a href="#" onclick="openModal('testimonialsModal')">Testimonials</a></li>
-                    <li><a href="contact.html" onclick="openModal('contactModal')">Contact</a></li>
+                    <li><a href="#" onclick="openModal('contactModal')">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -291,9 +256,27 @@
         <p>"Finding course and book PDFs on CoderVick saved me hours of searching online. Thank you for making learning easier!" - Alex, Computer Science student</p>
     </section>
 
-    <section class="cta">
-        <h2>Explore Our Resources</h2>
-        <button onclick="openModal('usefulLinksModal')">Check Useful Links</button>
+    <section class="container info-section">
+        <div>
+            <h3>About</h3>
+            <p>Learn more about our mission and values.</p>
+            <a href="#" onclick="openModal('aboutModal')">Read More</a>
+        </div>
+        <div>
+            <h3>Services</h3>
+            <p>Discover the services we offer to support your learning.</p>
+            <a href="#" onclick="openModal('servicesModal')">Read More</a>
+        </div>
+        <div>
+            <h3>Useful Links</h3>
+            <p>Access valuable resources and materials.</p>
+            <a href="#" onclick="openModal('usefulLinksModal')">Read More</a>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <p>Get in touch with us for any queries or support.</p>
+            <a href="#" onclick="openModal('contactModal')">Read More</a>
+        </div>
     </section>
 
     <footer>
@@ -304,18 +287,16 @@
     <div id="aboutModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('aboutModal')">&times;</span>
-            <h2>About CoderVick</h2>
-            <p>At CoderVick, we understand the challenges that engineering students face in their academic journey. That's why we provide comprehensive study materials designed to help you succeed in your first year and beyond. Our collection of free notes, course and book PDFs, and curated YouTube channel playlists will support you in your learning and revision.</p>
+            <h2>About Us</h2>
+            <p>More information about CoderVick...</p>
         </div>
     </div>
 
     <div id="servicesModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('servicesModal')">&times;</span>
-            <h2>Services Offered</h2>
-            <p>1. <strong>Free Notes:</strong> Access our collection of free notes tailored for BTech first-year students to supplement your learning.</p>
-            <p>2. <strong>Course and Book PDFs:</strong> Explore a variety of course materials and book PDFs to enhance your understanding of key concepts.</p>
-            <p>3. <strong>Top YouTube Channel Playlist:</strong> Dive into our curated playlist of educational videos on our top YouTube channel designed to support your studies.</p>
+            <h2>Our Services</h2>
+            <p>Details about the services we provide...</p>
         </div>
     </div>
 
@@ -323,23 +304,7 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('usefulLinksModal')">&times;</span>
             <h2>Useful Links</h2>
-            <p>Here are some useful resources to help you with your studies:</p>
-            <ul>
-                <li><a href="https://www.youtube.com/c/CoderVick" target="_blank">CoderVick YouTube Channel</a></li>
-                <li><a href="pdfs/first_year_notes.pdf" target="_blank">First Year Notes PDF</a></li>
-                <li><a href="pdfs/computer_science_books.pdf" target="_blank">Computer Science Books PDF</a></li>
-                <li><a href="https://www.example.com/course" target="_blank">Online Course</a></li>
-                <li><a href="https://www.youtube.com/playlist?list=PL1234567890" target="_blank">Educational Playlist</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="testimonialsModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('testimonialsModal')">&times;</span>
-            <h2>Testimonials</h2>
-            <p>"CoderVick has been a game-changer in my academic journey. The free notes and YouTube playlists have helped me ace my exams!" - Emily, Engineering student</p>
-            <p>"Finding course and book PDFs on CoderVick saved me hours of searching online. Thank you for making learning easier!" - Alex, Computer Science student</p>
+            <p>Important links and resources...</p>
         </div>
     </div>
 
@@ -347,46 +312,25 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('contactModal')">&times;</span>
             <h2>Contact Us</h2>
-            <p>For any queries or support, reach out to us at <a href="mailto:souvickh1234@gmail.com">souvickh1234@gmail.com</a>.</p>
+            <p>How to reach us...</p>
         </div>
     </div>
 
-    <!-- Include GSAP library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Header animation
-            gsap.from("header", {duration: 1, y: -100, ease: "bounce"});
-
-            // Showcase animation
-            gsap.from("#showcase h1", {duration: 1, opacity: 0, y: 50, delay: 0.5});
-            gsap.from("#showcase p", {duration: 1, opacity: 0, y: 50, delay: 1});
-
-            // Sections animations
-            gsap.from("section.container h2", {duration: 1, opacity: 0, y: 20, stagger: 0.2});
-            gsap.from("section.container p, section.container ul", {duration: 1, opacity: 0, y: 20, stagger: 0.2});
-
-            // Content boxes animation
-            gsap.from(".content div", {duration: 1, opacity: 0, scale: 0.5, stagger: 0.3});
-
-            // CTA animation
-            gsap.from(".cta", {duration: 1, opacity: 0, y: 30});
-        });
-
         function openModal(modalId) {
-            const modal = document.getElementById(modalId);
-            modal.style.display = "block";
-            gsap.from(modal.querySelector(".modal-content"), {duration: 1, scale: 0.5, opacity: 0, ease: "bounce"});
+            document.getElementById(modalId).style.display = 'block';
         }
 
         function closeModal(modalId) {
-            const modal = document.getElementById(modalId);
-            gsap.to(modal.querySelector(".modal-content"), {duration: 0.5, scale: 0.5, opacity: 0, onComplete: () => modal.style.display = "none"});
+            document.getElementById(modalId).style.display = 'none';
         }
 
         window.onclick = function(event) {
-            if (event.target.classList.contains('modal')) {
-                closeModal(event.target.id);
+            const modals = document.getElementsByClassName('modal');
+            for (let i = 0; i < modals.length; i++) {
+                if (event.target === modals[i]) {
+                    modals[i].style.display = 'none';
+                }
             }
         }
     </script>
